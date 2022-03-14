@@ -97,6 +97,15 @@ span{
     color: black;
 }
 
+/* style  for discription drop-down*/
+.quotation-box{
+    margin-top: 0.5px;
+    height: 37px;
+    width: 450px;
+    color: #2e3f50;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 4px;
+}
 
 /* particulars table  */
 
@@ -122,3 +131,92 @@ span{
     font-weight: 700;
     padding: 9px 0px 5px 15px;
 }
+
+/* modal styling part */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin-left: 300px;
+    padding: 20px;
+    border: 1px solid rgb(206, 205, 205);
+    width: 65%;
+  }
+
+  .tables{
+      display: flex;
+  }
+
+  .tables .table-left table{
+      height: 100%;
+      width: 50px;
+      border:1px solid rgb(182, 179, 179);
+  }
+
+  .tables table th{
+      background-color: rgb(201, 201, 201);
+  }
+
+  .tables table tr td{
+      background-color: white;
+      border:1px solid rgb(185, 181, 181);
+  }
+
+
+  .tables .table-right{
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .table-right table tr th{
+    border:1px solid rgb(192, 192, 192);
+  }
+
+  .table-right table tr td{
+    border:1px solid rgb(190, 190, 190);
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  .plus-btn{
+      width: 25px;
+      margin-left: 15px;
+  }
+
+  .count-td{
+    margin-left: 1px;
+    margin-top: 10px;
+    width: 65px;
+    height: 20px;
+  }
+
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
