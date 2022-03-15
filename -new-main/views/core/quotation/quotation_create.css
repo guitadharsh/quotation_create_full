@@ -70,6 +70,8 @@ input{
     height: 30px;
     width: 250px;
     margin-bottom: 8px;
+    padding-left: 4px;
+    font-size: 14px;
 }
 
 .box2{
@@ -220,3 +222,12 @@ span{
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media screen and (max-width:900px){
+        .modal{
+            width: 90%;
+        }
+        
+        
+  }
+
