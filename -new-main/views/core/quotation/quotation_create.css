@@ -76,10 +76,20 @@ input{
 
 .box2{
     height: 30px;
-    width: 250px;
+    width: 220px;
     margin-left: 25px;
     border: 1px solid black;
     
+}
+
+.plus-symb{
+    height: 31px;
+    width: 30px;
+    background-color: #2e3f50;
+    border: none;
+    color: white; 
+    font-weight: 600; 
+
 }
 
 .box3{
@@ -222,6 +232,52 @@ span{
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* save and reset buttons */
+
+  .save-btn{
+    width: 70px;
+    background-color: #2e3f50; 
+    color: white
+  }
+
+  .reset-btn{
+    width: 70px; 
+    border: 1px solid #2e3f50;
+  }
+
+  /* radio buttons box */
+
+  .box-radios{
+      display: flex;
+      width: 50%;
+      height: 30px;
+      margin: 20px 0;
+      font-size: 14px;
+  }
+  .box-radio1{
+      width: 300px;
+      border: 1px solid rgb(197, 194, 194);
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      padding-top: 3px;
+      padding-left: 3px;
+    
+  }
+
+  .box-radio2{
+    width: 300px;
+    border: 1px solid rgb(197, 194, 194);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+
 
   @media screen and (max-width:900px){
         .modal{

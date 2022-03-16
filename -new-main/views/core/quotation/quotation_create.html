@@ -259,14 +259,14 @@
                      <input type="text" class="box1" value="QUO/323/2021-22"><br>
 
                      <label for="customer">Customer <span>*</span></label>
-                     <select name="customer" id="" class="box2"><i fa fa-plus>+</i>
+                     <select name="customer" id="" class="box2">
                         <option value="">Choose Customer</option>
                         <option value="a">a</option>
                         <option value="b">b</option>
                         <option value="c">c</option>
                         <option value="d">d</option>
                         <option value="e">e</option>
-                     </select><br>
+                     </select><button class="plus-symb">+</button><br>
 
                      <label for="">Document</label>
                      <input type="file" class="box3">
@@ -277,7 +277,7 @@
                      <input type="text" class="box4"><br>
 
                      <label for="">Total Amount <span>*</span></label>
-                     <input type="text" class="box5"><br>
+                     <input type="text" class="box5" id="total"><br>
 
                      <label for="">Creating By <span>*</span></label>
                      <input type="text" class="box6">
@@ -315,13 +315,13 @@
                   <div  class="quoatation_create_button_color">
                      <p class="quoatation_create_p_color" style="display: flex;text-align: center;padding: 4px;justify-content: center;">Price</p>
                   </div>
-                  <input type="text" class="form-control" placeholder="Price">
+                  <input type="text" class="form-control" placeholder="Price" id="price">
                </div>
                <div class="col-2">
                   <div   class="quoatation_create_button_color">
                      <p class="quoatation_create_p_color" style="display: flex;text-align: center;padding: 4px;justify-content: center;">Qty</p>
                   </div>
-                  <input type="text" class="form-control" placeholder="Qty">
+                  <input type="text" class="form-control" placeholder="Qty" id="qty">
                </div>
             </div><br>
             <div class="form-row">
@@ -348,8 +348,8 @@
                   <option value="" selected disabled>0.0%
                   </option>
                   
-                  <option>GST@ 18.0%</option>
-                  <option>GST@ 28.0%</option>
+                  <option value="18">GST@ 18.0%</option>
+                  <option value="28">GST@ 28.0%</option>
               </select>
                   
                </div>
@@ -357,13 +357,13 @@
                   <div   class="quoatation_create_button_color">
                      <p class="quoatation_create_p_color" style="display: flex;text-align: center;padding: 4px;justify-content: center;">Tax Amount</p>
                   </div>
-                  <input type="text" class="form-control" placeholder="Tax Amount">
+                  <input type="text" class="form-control" placeholder="Tax Amount" id="tax">
                </div>
                <div class="col-2">
                   <div   class="quoatation_create_button_color">
                      <p class="quoatation_create_p_color" style="display: flex;text-align: center;padding: 4px;justify-content: center;">Sub Total</p>
                   </div>
-                  <input type="text" class="form-control" placeholder="Sub Total">
+                  <input type="text" class="form-control" id="subTotal">
                </div>
                <div class="col-2">
                   <div  class="quoatation_create_button_color">
@@ -372,11 +372,33 @@
                   <input type="submit" value="+" style="background-color: #2e3f50;font-weight: bolder; color: #fff;" class="form-control">
                </div>
             </div>
-            <!-- Save and Reset buttons -->
-            <div style="margin-left: 87px; margin-top: 10px;">
-            <button type="button" class="btn btn-light" style="width: 70px; background-color: #2e3f50; color: white;">Save</button>
-            <button type="button reset" class="btn btn-light" style="width: 70px; border: 1px solid #2e3f50;">Reset</button>
+
+            <!-- Radio buttons -->
+            <!-- sample -->
+            <div class="box-radios">
+            <div class="box-radio1">
+            <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+               <label class="form-check-label" for="flexRadioDefault1">
+                 Canara Bank, Lashkar Mohalla
+               </label>
             </div>
+             </div>
+
+             <div class="box-radio2">
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+               <label class="form-check-label" for="flexRadioDefault2">
+                 Canara Bank, Saraswatipuram
+               </label>
+             </div>
+            </div>
+         </div>
+            <!-- Save and Reset buttons -->
+            
+            <button type="button" class="btn btn-light save-btn" onclick="multiply()">Save</button>
+            <button type="button reset" class="btn btn-light reset-btn">Reset</button>
+         
                
 <!--                   
                   <div class="form-row">
